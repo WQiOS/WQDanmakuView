@@ -16,7 +16,6 @@
  */
 @property(nonatomic,strong)UILabel *danmakuLabel;
 
-
 /**
  弹幕实体cell
 
