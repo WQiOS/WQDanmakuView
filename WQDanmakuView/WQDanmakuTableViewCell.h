@@ -25,7 +25,7 @@
  @param danakuString    弹幕内容
  @param danakuHight     弹幕高度
  @param danakuSpecHight 弹幕间隙
- @param danakuSpecHight 弹幕字体大小
+ @param danmakuFont     弹幕字体大小
  @return 弹幕实体
  */
 + (WQDanmakuTableViewCell *)initCellWithIndexPath:(NSIndexPath *)indexPath andTableView:(UITableView *)tableView danakuString:(NSString *)danakuString danakuHight:(CGFloat)danakuHight danakuSpecHight:(CGFloat)danakuSpecHight danmakuFont:(UIFont *)danmakuFont;

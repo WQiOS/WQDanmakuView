@@ -17,7 +17,7 @@
         cell = [[WQDanmakuTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"WQDanmakuTableViewCell"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    CGSize titleLabelSize = [danakuString boundingRectWithSize:CGSizeMake(320, MAXFLOAT)options:(NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)  attributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:14.0f]} context:nil].size;
+    CGSize titleLabelSize = [danakuString boundingRectWithSize:CGSizeMake(320, MAXFLOAT)options:(NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)  attributes:@{ NSFontAttributeName : danmakuFont} context:nil].size;
     titleLabelSize.height = ceil(titleLabelSize.height) + 1;
     titleLabelSize.width = ceil(titleLabelSize.width);
     
