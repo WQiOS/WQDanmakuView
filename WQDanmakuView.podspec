@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "WQDanmakuView"
-s.version      = "0.0.1"
+s.version      = "0.0.4"
 s.summary      = "弹幕小插件"
 
 s.description  = <<-DESC
@@ -17,20 +17,22 @@ s.description  = <<-DESC
 DESC
 
 s.homepage     = "https://github.com/WQiOS/WQDanmakuView"
-
 s.license      = "MIT"
-
 s.author             = { "王强" => "1570375769@qq.com" }
-
 s.platform     = :ios, "8.0" #平台及支持的最低版本
-
 s.requires_arc = true # 是否启用ARC
-
 s.source       = { :git => "https://github.com/WQiOS/WQDanmakuView.git", :tag => "#{s.version}" }
 
-s.source_files  = "WQDanmakuView/*.{h,m}"
-
 s.ios.framework  = 'UIKit'
+s.default_subspec = 'Core'
+
+s.subspec 'Core' do |core|
+core.source_files = "WQDanmakuView/Core/*.{h,m}"
+end
+
+s.subspec 'Webview' do |webview|
+webview.source_files = "WQDanmakuView/Webview/*.{h,m}"
+end
 
 end
 
