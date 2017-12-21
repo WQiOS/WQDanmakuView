@@ -22,7 +22,7 @@
         self.danmakuHight = 30;
         self.danmakuSpecHight = 5;
         self.currentSplider = 1;
-        self.danmakuFont = [UIFont systemFontOfSize:14.0];
+        self.danmakuFont = [UIFont systemFontOfSize:14.0f];
         [self addSubview:self.tablewView];
     }
     return self;
@@ -33,7 +33,6 @@
     _danmakuArray = [NSArray arrayWithArray:danmakuArray];
     CAMediaTimingFunction * timing=[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     [self.tablewView setContentOffset:CGPointMake(0, self.tablewView.contentOffset.y+self.danmakuHight + self.danmakuSpecHight) withTimingFunction:timing duration:self.currentSplider];
-//    [self.tablewView reloadData];
 }
 
 #pragma mark - UITableViewDelegate
