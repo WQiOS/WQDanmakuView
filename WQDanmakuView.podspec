@@ -24,14 +24,9 @@ s.requires_arc = true # 是否启用ARC
 s.source       = { :git => "https://github.com/WQiOS/WQDanmakuView.git", :tag => "#{s.version}" }
 
 s.ios.framework  = 'UIKit'
-s.default_subspec = 'Core'
 
 s.subspec 'Core' do |core|
 core.source_files = "WQDanmakuView/Core/*.{h,m}"
-end
-
-s.subspec 'Webview' do |webview|
-webview.source_files = "WQDanmakuView/Webview/*.{h,m}"
 end
 
 end
