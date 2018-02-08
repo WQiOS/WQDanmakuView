@@ -18,7 +18,7 @@ s.source       = { :git => "https://github.com/WQiOS/WQDanmakuView.git", :tag =>
 
 s.ios.framework  = 'UIKit'
 
-s.source_files = "WQDanmakuView/Core/*.{h,m}"
+s.source_files = "WQDanmakuView/*.{h,m}"
 
 end
 
