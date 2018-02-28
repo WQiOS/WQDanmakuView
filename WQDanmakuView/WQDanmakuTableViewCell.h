@@ -14,7 +14,7 @@
 /**
  弹幕
  */
-@property(nonatomic,strong)UILabel *danmakuLabel;
+@property(nonatomic,strong) UILabel *danmakuLabel;
 
 /**
  弹幕实体cell
@@ -28,4 +28,5 @@
  @return 弹幕实体
  */
 + (WQDanmakuTableViewCell *)initCellWithIndexPath:(NSIndexPath *)indexPath andTableView:(UITableView *)tableView danakuString:(NSString *)danakuString danakuHight:(CGFloat)danakuHight danakuSpecHight:(CGFloat)danakuSpecHight danmakuFont:(UIFont *)danmakuFont;
+
 @end

@@ -10,8 +10,7 @@
 
 @implementation WQDanmakuTableViewCell
 
-+ (WQDanmakuTableViewCell *)initCellWithIndexPath:(NSIndexPath *)indexPath andTableView:(UITableView *)tableView danakuString:(NSString *)danakuString danakuHight:(CGFloat)danakuHight danakuSpecHight:(CGFloat)danakuSpecHight danmakuFont:(UIFont *)danmakuFont
-{
++ (WQDanmakuTableViewCell *)initCellWithIndexPath:(NSIndexPath *)indexPath andTableView:(UITableView *)tableView danakuString:(NSString *)danakuString danakuHight:(CGFloat)danakuHight danakuSpecHight:(CGFloat)danakuSpecHight danmakuFont:(UIFont *)danmakuFont {
     WQDanmakuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WQDanmakuTableViewCell"];
     if (cell == nil) {
         cell = [[WQDanmakuTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"WQDanmakuTableViewCell"];
@@ -28,8 +27,7 @@
     return cell;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setSubview];
@@ -37,8 +35,7 @@
     return self;
 }
 
-- (void)setSubview
-{
+- (void)setSubview {
     self.danmakuLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, [[UIScreen mainScreen] bounds].size.width, self.contentView.bounds.size.height)];
     self.danmakuLabel.layer.masksToBounds = YES;
     self.danmakuLabel.layer.cornerRadius = 4;

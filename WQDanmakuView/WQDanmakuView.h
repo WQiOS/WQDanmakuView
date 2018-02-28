@@ -33,7 +33,7 @@
 /**
  弹幕的时间间隔(默认高度为1s/个，范围在0.5-3之间)
  */
-@property(nonatomic,assign)float currentSplider;
+@property(nonatomic,assign)NSTimeInterval currentSplider;
 
 /**
  弹幕的字体(默认高度为14)
