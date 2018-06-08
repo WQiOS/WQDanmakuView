@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/APP/!svn/ver/1299/iOS/SharedLibrary/WBPayManage/trunk/WBPayManage/Classes/AlipaySDK.framework/Headers
+END
+AlipaySDK.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/APP/!svn/ver/1299/iOS/SharedLibrary/WBPayManage/trunk/WBPayManage/Classes/AlipaySDK.framework/Headers/AlipaySDK.h
+END
+APayAuthInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/APP/!svn/ver/1299/iOS/SharedLibrary/WBPayManage/trunk/WBPayManage/Classes/AlipaySDK.framework/Headers/APayAuthInfo.h
+END
